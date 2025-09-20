@@ -13,7 +13,7 @@
         "source": "~/.config/fastfetch/archpuccinn.png",
         "type": "kitty",
         "height": 16,
-        "width": 34,
+        "width": 10,
         "padding": {
             "top": 4,
            "left": 4
@@ -28,7 +28,7 @@
         },
         {
             "type": "title",
-            "key": " PC",
+            "key": " PC",
             "keyColor": "green"
         },
         {
@@ -45,7 +45,12 @@
         },
         {
             "type": "memory",
-            "key": "└ └󰍛 Memory",
+            "key": "│ ├󰍛 Memory",
+            "keyColor": "green"
+        },
+        {
+            "type": "swap",
+            "key": "└ └󰓡 Swap",
             "keyColor": "green"
         },
         {
@@ -61,12 +66,12 @@
         },
         {
             "type": "os",
-            "key": " OS",
+            "key": " OS",
             "keyColor": "yellow"
         },
         {
             "type": "kernel",
-            "key": "│ ├ Kernel",
+            "key": "│ ├ Kernel",
             "keyColor": "yellow"
         },
         {
@@ -76,34 +81,34 @@
         },
         {
             "type": "shell",
-            "key": "│ ├ Shell",
+            "key": "│ ├ Shell",
             "keyColor": "yellow"
         },
         {
             "type": "command",
-            "key": "│ ├ OS Age",
+            "key": "│ ├ OS Age",
             "keyColor": "yellow",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
-            "key": "└ └ Uptime",
+            "key": "└ └ Uptime",
             "keyColor": "yellow"
         },
         "break",
         {
             "type": "de",
-            "key": " DE",
+            "key": " DE",
             "keyColor": "blue"
         },
         {
             "type": "lm",
-            "key": "│ ├ LM",
+            "key": "│ ├ LM",
             "keyColor": "blue"
         },
         {
             "type": "wm",
-            "key": "│ ├ WM",
+            "key": "│ ├ WM",
             "keyColor": "blue"
         },
         {
@@ -117,7 +122,6 @@
             "key": "└ └󰉼 Theme",
             "keyColor": "blue"
         },
-
         {
             "type": "custom",
             "format": "└────────────────────────────────────────────────────┘",
@@ -125,7 +129,7 @@
         },
         {
             "type": "custom",
-            "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+            "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
         },
         "break",
     ]
