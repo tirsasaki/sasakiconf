@@ -133,11 +133,11 @@
             "type": "command",
             "key": " OS Age",
             "keyColor": "magenta",
-            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+            "text": "if [ -f /var/log/pacman.log ]; then install_line=$(head -1 /var/log/pacman.log); install_date=$(echo \"$install_line\" | grep -o '\\[.*\\]' | tr -d '[]' | cut -d'T' -f1); install_timestamp=$(date -d \"$install_date\" +%s 2>/dev/null); current=$(date +%s); days=$(( (current - install_timestamp) / 86400 )); hours=$(( ((current - install_timestamp) % 86400) / 3600 )); if [ $days -gt 0 ]; then echo \"${days}d ${hours}h\"; else echo \"${hours}h\"; fi; else echo \"Unknown\"; fi"
         },
         {
             "type": "uptime",
-            "key": "└ └ Uptime",
+            "key": " Uptime",
             "keyColor": "magenta"
         },
         {
@@ -149,6 +149,6 @@
             "type": "custom",
             "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
         },
-        "break",
+        "break"
     ]
 }
