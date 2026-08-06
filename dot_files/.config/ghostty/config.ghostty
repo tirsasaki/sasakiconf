@@ -1,0 +1,103 @@
+# ~/.config/ghostty/config
+# Konfigurasi Ghostty LENGKAP - Tema Dracula, background transparan, font size 10
+# Cocok untuk KDE Plasma di CachyOS
+
+# =========================
+# TEMA & WARNA
+# =========================
+theme = Dracula
+
+# Palet warna Dracula manual (fallback/override, aktif kalau built-in theme berubah nama/hilang)
+# Hapus tanda # di bawah kalau built-in "theme = Dracula" tidak muncul sesuai harapan
+# background = #282a36
+# foreground = #f8f8f2
+# cursor-color = #f8f8f2
+# selection-background = #44475a
+# selection-foreground = #f8f8f2
+#
+# palette = 0=#21222c
+# palette = 1=#ff5555
+# palette = 2=#50fa7b
+# palette = 3=#f1fa8c
+# palette = 4=#bd93f9
+# palette = 5=#ff79c6
+# palette = 6=#8be9fd
+# palette = 7=#f8f8f2
+# palette = 8=#6272a4
+# palette = 9=#ff6e6e
+# palette = 10=#69ff94
+# palette = 11=#ffffa5
+# palette = 12=#d6acff
+# palette = 13=#ff92df
+# palette = 14=#a4ffff
+# palette = 15=#ffffff
+
+# =========================
+# TRANSPARANSI & BLUR
+# =========================
+background-opacity = 0.85
+background-blur-radius = 20
+unfocused-split-opacity = 0.7
+
+# =========================
+# FONT
+# =========================
+font-size = 10
+font-family = "JetBrains Mono"
+font-family-bold = "JetBrains Mono Bold"
+font-family-italic = "JetBrains Mono Italic"
+font-thicken = false
+adjust-cell-height = 0%
+
+# =========================
+# WINDOW / TAMPILAN
+# =========================
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+window-theme = dark
+window-save-state = always
+confirm-close-surface = false
+
+# =========================
+# CURSOR
+# =========================
+cursor-style = block
+cursor-style-blink = true
+
+# =========================
+# SCROLLBACK & MOUSE
+# =========================
+scrollback-limit = 10000
+mouse-hide-while-typing = true
+copy-on-select = true
+
+# =========================
+# SHELL
+# =========================
+# command = /bin/bash
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# =========================
+# TAB & SPLIT
+# =========================
+window-new-tab-position = end
+
+# =========================
+# KEYBINDINGS TAMBAHAN (opsional, sesuaikan selera)
+# =========================
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+keybind = ctrl+shift+equal=increase_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+shift+zero=reset_font_size
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+shift+d=new_split:right
+keybind = ctrl+shift+e=new_split:down
+
+# =========================
+# LAIN-LAIN
+# =========================
+gtk-single-instance = true
+quit-after-last-window-closed = true
