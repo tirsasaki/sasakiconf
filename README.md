@@ -1,11 +1,10 @@
-
 # My personal dotfiles
 
 ## Contents
 
 - `dot_files/.zshrc` — Zsh config (Oh My Zsh + Powerlevel10k)
 - `dot_files/.config/nvim/` — Neovim config (lazy.nvim, Dracula theme)
-- `dot_files/.config/kitty/` — Kitty terminal config (Gruvbox theme)
+- `dot_files/.config/kitty/` — Kitty terminal config (One Dark theme)
 - `dot_files/.config/alacritty/` — Alacritty terminal config
 - `dot_files/.config/ghostty/` — Ghostty terminal config (Dracula theme)
 - `dot_files/.config/fastfetch/` — Fastfetch config
@@ -15,7 +14,7 @@ Note: `dot_files/nvim/` and `dot_files/.config/nvim/` are duplicates.
 
 ## Usage
 
-```bash
+```
 git clone https://github.com/tirsasaki/sasakiconf.git
 cd sasakiconf
 
@@ -32,7 +31,7 @@ Then `source ~/.zshrc` and open Neovim once to let lazy.nvim install plugins.
 ## To check before reusing
 
 - Fonts used: SauceCodePro, JetBrains Mono
-- `kitty.conf` references an external theme file: `~/dev/opensource/kitty_gruvbox_theme/gruvbox_dark_soft.conf`
+- `kitty.conf` uses the One Dark color scheme — pastikan file tema One Dark (mis. `one-dark.conf`) sudah ada di folder kitty kamu, atau ganti baris `include` di `kitty.conf` sesuai lokasi file tema di sistemmu.
 - `fastfetch/config.jsonc` references a custom logo path
 
 ## License
