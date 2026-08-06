@@ -1,36 +1,32 @@
 # ~/.config/ghostty/config
-# Konfigurasi Ghostty LENGKAP - Tema Dracula, background transparan, font size 10
+# Konfigurasi Ghostty LENGKAP - Tema One Dark, background transparan, font size 10
 # Cocok untuk KDE Plasma di CachyOS
 
 # =========================
-# TEMA & WARNA
+# TEMA & WARNA - ONE DARK
 # =========================
-theme = Dracula
+background = #282c34
+foreground = #abb2bf
+cursor-color = #528bff
+selection-background = #3e4451
+selection-foreground = #abb2bf
 
-# Palet warna Dracula manual (fallback/override, aktif kalau built-in theme berubah nama/hilang)
-# Hapus tanda # di bawah kalau built-in "theme = Dracula" tidak muncul sesuai harapan
-# background = #282a36
-# foreground = #f8f8f2
-# cursor-color = #f8f8f2
-# selection-background = #44475a
-# selection-foreground = #f8f8f2
-#
-# palette = 0=#21222c
-# palette = 1=#ff5555
-# palette = 2=#50fa7b
-# palette = 3=#f1fa8c
-# palette = 4=#bd93f9
-# palette = 5=#ff79c6
-# palette = 6=#8be9fd
-# palette = 7=#f8f8f2
-# palette = 8=#6272a4
-# palette = 9=#ff6e6e
-# palette = 10=#69ff94
-# palette = 11=#ffffa5
-# palette = 12=#d6acff
-# palette = 13=#ff92df
-# palette = 14=#a4ffff
-# palette = 15=#ffffff
+palette = 0=#282c34
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#56b6c2
+palette = 7=#abb2bf
+palette = 8=#5c6370
+palette = 9=#e06c75
+palette = 10=#98c379
+palette = 11=#e5c07b
+palette = 12=#61afef
+palette = 13=#c678dd
+palette = 14=#56b6c2
+palette = 15=#ffffff
 
 # =========================
 # TRANSPARANSI & BLUR
@@ -85,7 +81,7 @@ shell-integration-features = cursor,sudo,title
 window-new-tab-position = end
 
 # =========================
-# KEYBINDINGS TAMBAHAN (opsional, sesuaikan selera)
+# KEYBINDINGS TAMBAHAN
 # =========================
 keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+w=close_surface

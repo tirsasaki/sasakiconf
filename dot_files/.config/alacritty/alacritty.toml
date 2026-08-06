@@ -1,133 +1,160 @@
+# ~/.config/alacritty/alacritty.toml
+# Konfigurasi Alacritty LENGKAP & MODERN (format TOML, sesuai Alacritty 0.13+)
+# Tema One Dark, background transparan, cocok untuk KDE Plasma di CachyOS
+
+# =========================
+# GENERAL
+# =========================
+[general]
+live_config_reload = true
+working_directory = "None"
+
 [env]
 TERM = "xterm-256color"
-WINIT_X11_SCALE_FACTOR = "1"
 
+# =========================
+# WINDOW
+# =========================
 [window]
+opacity = 0.85
+blur = true
+padding = { x = 10, y = 10 }
 dynamic_padding = true
 decorations = "full"
-title = "Alacritty@CachyOS"
-opacity = 0.8
-decorations_theme_variant = "Dark"
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
+resize_increments = true
 
 [window.dimensions]
-columns = 100
+columns = 120
 lines = 30
 
-[window.class]
-instance = "Alacritty"
-general = "Alacritty"
-
+# =========================
+# SCROLLING
+# =========================
 [scrolling]
 history = 10000
 multiplier = 3
 
+# =========================
+# FONT
+# =========================
+[font]
+size = 10.0
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 0
+
+# =========================
+# WARNA - TEMA ONE DARK
+# =========================
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x2E3440"
-foreground = "0xD8DEE9"
+background = "#282c34"
+foreground = "#abb2bf"
+dim_foreground = "#828997"
+bright_foreground = "#abb2bf"
+
+[colors.cursor]
+text = "#282c34"
+cursor = "#528bff"
+
+[colors.vi_mode_cursor]
+text = "#282c34"
+cursor = "#528bff"
+
+[colors.selection]
+text = "CellForeground"
+background = "#3e4451"
+
+[colors.search.matches]
+foreground = "CellBackground"
+background = "#98c379"
+
+[colors.search.focused_match]
+foreground = "CellBackground"
+background = "#e5c07b"
+
+[colors.footer_bar]
+background = "#282c34"
+foreground = "#abb2bf"
 
 [colors.normal]
-black = "0x3B4252"
-red = "0xBF616A"
-green = "0xA3BE8C"
-yellow = "0xEBCB8B"
-blue = "0x81A1C1"
-magenta = "0xB48EAD"
-cyan = "0x88C0D0"
-white = "0xE5E9F0"
+black = "#282c34"
+red = "#e06c75"
+green = "#98c379"
+yellow = "#e5c07b"
+blue = "#61afef"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#abb2bf"
 
 [colors.bright]
-black = "0x4C566A"
-red = "0xBF616A"
-green = "0xA3BE8C"
-yellow = "0xEBCB8B"
-blue = "0x81A1C1"
-magenta = "0xB48EAD"
-cyan = "0x8FBCBB"
-white = "0xECEFF4"
+black = "#5c6370"
+red = "#e06c75"
+green = "#98c379"
+yellow = "#e5c07b"
+blue = "#61afef"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#ffffff"
 
-[font]
-size = 12
+[colors.dim]
+black = "#282c34"
+red = "#e06c75"
+green = "#98c379"
+yellow = "#e5c07b"
+blue = "#61afef"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#abb2bf"
 
-[font.normal]
-family = "monospace"
-style = "Regular"
-
-[font.bold]
-family = "monospace"
-style = "Bold"
-
-[font.italic]
-family = "monospace"
-style = "Italic"
-
-[font.bold_italic]
-family = "monospace"
-style = "Bold Italic"
-
-[selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-save_to_clipboard = true
-
+# =========================
+# CURSOR
+# =========================
 [cursor]
-style = "Underline"
+style = { shape = "Block", blinking = "On" }
 vi_mode_style = "None"
+blink_interval = 600
+blink_timeout = 5
 unfocused_hollow = true
 thickness = 0.15
 
+# =========================
+# MOUSE
+# =========================
 [mouse]
 hide_when_typing = true
 
-[[mouse.bindings]]
-mouse = "Middle"
-action = "PasteSelection"
+# =========================
+# SHELL
+# =========================
+[terminal]
+shell = { program = "/usr/bin/zsh" }
 
-[keyboard]
-[[keyboard.bindings]]
-key = "Paste"
-action = "Paste"
-
-[[keyboard.bindings]]
-key = "Copy"
-action = "Copy"
-
-[[keyboard.bindings]]
-key = "L"
-mods = "Control"
-action = "ClearLogNotice"
-
-[[keyboard.bindings]]
-key = "L"
-mods = "Control"
-mode = "~Vi"
-chars = "\f"
-
-[[keyboard.bindings]]
-key = "PageUp"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollPageUp"
-
-[[keyboard.bindings]]
-key = "PageDown"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollPageDown"
-
-[[keyboard.bindings]]
-key = "Home"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollToTop"
-
-[[keyboard.bindings]]
-key = "End"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollToBottom"
-
+# =========================
+# KEYBINDINGS
+# =========================
 [[keyboard.bindings]]
 key = "V"
 mods = "Control|Shift"
@@ -139,6 +166,31 @@ mods = "Control|Shift"
 action = "Copy"
 
 [[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "N"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
 key = "F"
 mods = "Control|Shift"
 action = "SearchForward"
@@ -148,17 +200,18 @@ key = "B"
 mods = "Control|Shift"
 action = "SearchBackward"
 
-[[keyboard.bindings]]
-key = "C"
+# =========================
+# HINTS (klik URL langsung buka browser)
+# =========================
+[[hints.enabled]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+command = "xdg-open"
+post_processing = true
+
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
+
+[hints.enabled.binding]
+key = "U"
 mods = "Control|Shift"
-mode = "Vi"
-action = "ClearSelection"
-
-[[keyboard.bindings]]
-key = "Key0"
-mods = "Control"
-action = "ResetFontSize"
-
-[general]
-live_config_reload = true
-working_directory = "None"
