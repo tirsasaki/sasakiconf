@@ -17,7 +17,7 @@ Personal configuration files for my development environment — shell, editor, t
 | `dot_files/.config/nvim/` | Neovim config (lazy.nvim, Dracula theme) |
 | `dot_files/.config/kitty/` | Kitty terminal config (One Dark theme) |
 | `dot_files/.config/alacritty/` | Alacritty terminal config |
-| `dot_files/.config/ghostty/` | Ghostty terminal config (Dracula theme) |
+| `dot_files/.config/ghostty/` | Ghostty terminal config (One Dark theme) |
 | `dot_files/.config/fastfetch/` | Fastfetch config |
 | `dot_files/.wallpaper/` | Wallpapers |
 
