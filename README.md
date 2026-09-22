@@ -34,17 +34,14 @@ git clone https://github.com/tirsasaki/sasakiconf.git
 cd sasakiconf
 ```
 
-Copy the configs you need:
+The easiest way to apply these configurations is by using the provided Python installer script. It will safely back up your existing configurations (appending `.bak`) and create symlinks.
 
 ```bash
-cp dot_files/.zshrc ~/.zshrc
-cp -r dot_files/.config/nvim ~/.config/nvim
-cp -r dot_files/.config/kitty ~/.config/kitty
-cp -r dot_files/.config/alacritty ~/.config/alacritty
-cp -r dot_files/.config/ghostty ~/.config/ghostty
-cp -r dot_files/.config/fastfetch ~/.config/fastfetch
-cp -r dot_files/.config/yazi ~/.config/yazi
-cp dot_files/.config/starship.toml ~/.config/starship.toml
+# Run the interactive installer (creates symlinks)
+python3 install.py
+
+# Or if you prefer to copy files instead of symlinking:
+python3 install.py --copy
 ```
 
 Reload your shell and finish setup:
