@@ -14,11 +14,13 @@ Personal configuration files for my development environment — shell, editor, t
 | Path | Description |
 |---|---|
 | `dot_files/.zshrc` | Zsh config (Oh My Zsh + Powerlevel10k) |
+| `dot_files/.config/starship.toml` | Starship prompt config |
 | `dot_files/.config/nvim/` | Neovim config (lazy.nvim, Dracula theme) |
 | `dot_files/.config/kitty/` | Kitty terminal config (One Dark theme) |
 | `dot_files/.config/alacritty/` | Alacritty terminal config |
 | `dot_files/.config/ghostty/` | Ghostty terminal config (One Dark theme) |
 | `dot_files/.config/fastfetch/` | Fastfetch config |
+| `dot_files/.config/yazi/` | Yazi file manager config (Catppuccin Mocha theme) |
 | `dot_files/.wallpaper/` | Wallpapers |
 
 > **Note:** `dot_files/nvim/` and `dot_files/.config/nvim/` are duplicates.
@@ -41,6 +43,8 @@ cp -r dot_files/.config/kitty ~/.config/kitty
 cp -r dot_files/.config/alacritty ~/.config/alacritty
 cp -r dot_files/.config/ghostty ~/.config/ghostty
 cp -r dot_files/.config/fastfetch ~/.config/fastfetch
+cp -r dot_files/.config/yazi ~/.config/yazi
+cp dot_files/.config/starship.toml ~/.config/starship.toml
 ```
 
 Reload your shell and finish setup:
