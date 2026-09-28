@@ -58,7 +58,7 @@ Double-check these before applying the configs on a new machine:
 
 - **Fonts**: SauceCodePro, JetBrains Mono — install both beforehand.
 - **Kitty**: uses the One Dark color scheme. Make sure the theme file is present in your Kitty config folder, or update the `include` line in `kitty.conf` to match the theme file's location on your system.
-- **Fastfetch**: `config.jsonc` references a custom logo path — update it to a valid path on your machine.
+- **Fastfetch**: `config.jsonc` references a custom logo path — update it to a valid path on your machine..
 
 ## License
 
